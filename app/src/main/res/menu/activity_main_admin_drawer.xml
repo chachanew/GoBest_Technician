@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Home_nav_view"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/Profile_nav_view"
+            android:icon="@drawable/profile"
+            android:title="Profile"/>
+
+        <item
+            android:id="@+id/Sale_nav_view"
+            android:icon="@drawable/sale"
+            android:title="Sale"/>
+
+        <item
+            android:id="@+id/Distributer_nav_view"
+            android:icon="@drawable/franchise"
+            android:title="Distributer"/>
+
+        <item
+            android:id="@+id/Part_nav_view"
+            android:icon="@drawable/discount_benefits"
+            android:title="Part Details"/>
+
+        <item
+            android:id="@+id/Billing_nav_view"
+            android:icon="@drawable/accounting"
+            android:title="Billing Status"/>
+
+
+        <item
+            android:id="@+id/Live_Status_nav_view"
+            android:icon="@drawable/tracking"
+            android:title="Live Tracking"/>
+
+        <item
+            android:id="@+id/Staff_nav_view"
+            android:icon="@drawable/staff"
+            android:title="Staff"/>
+
+        <item
+            android:id="@+id/News_nav_view"
+            android:icon="@drawable/news"
+            android:title="News"/>
+
+
+    </group>
+
+
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <item
+
+                android:id="@+id/Enquiry_nav_view"
+
+                android:icon="@drawable/contactus"
+
+                android:title="Contact Us"/>
+
+            <item
+
+                android:id="@+id/Other_Franchise_nav_view"
+
+                android:icon="@drawable/orders"
+
+                android:title="Other_Franchise"/>
+
+            <item
+
+                android:id="@+id/Offers_nav_view"
+
+                android:icon="@drawable/discount_benefits"
+
+                android:title="Offers"/>
+
+
+        </menu>
+
+    </item>
+
+</menu>

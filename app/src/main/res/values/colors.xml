@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f6f7f1</color>
+    <!--<color name="colorPrimary">#FF000000</color>-->
+    <color name="colorPrimaryDark">#32d24f</color>
+    <color name="colorAccent">#f39c12</color>
+    <color name="background">#ff2e3135</color>
+
+    <color name="Color_Chartreuse">#ff7fff00</color>
+
+    <color name="dashboard_totalmoney">#ff222022</color>
+
+    <color name="overdue">#fff32300</color>
+
+    <color name="newgreen">#32c24d</color>
+
+    <color name="global_text">#ffffffff</color>
+
+    <color name="aqua">#ff37eeea</color>
+
+    <color name="aquanew">#5DC5E5</color>
+
+    <color name="app_color1">#14F2D7</color>
+
+    <color name="app_color2">#50758E</color>
+
+    <color name="candy_blue08">#fff2f6fc</color>
+
+    <color name="black">#000000</color>
+
+
+</resources>

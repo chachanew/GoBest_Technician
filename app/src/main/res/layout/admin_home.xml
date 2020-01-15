@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/dashboardnewTop"
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/outstanding_linearlayout"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/just_tv"
+                        android:textColor="@color/global_text"
+                        android:text="Jobs Done"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/values"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:weightSum="2"
+                        android:layout_below="@id/just_tv"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="44.0sp"
+                                android:textColor="@color/global_text"
+                                android:id="@+id/outstanding_counttext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-8dp"
+                                android:fontFamily="@font/mmedium"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:text="0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Todays"
+
+                                android:layout_marginTop="-8dp"
+                                android:textColor="@color/global_text"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="44.0sp"
+                                android:textColor="@color/global_text"
+                                android:id="@+id/outstanding_counttext1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-8dp"
+                                android:fontFamily="@font/mmedium"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:text="0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total"
+                                android:layout_marginTop="-8dp"
+                                android:textColor="@color/global_text"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@id/values"
+                        android:background="@color/background"></View>
+
+
+
+                    <TextView
+                        android:textSize="12.0sp"
+                        android:textColor="@color/global_text"
+                        android:id="@+id/outstanding_totalmoney"
+                        android:fontFamily="@font/mmedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$0.00"
+                        android:singleLine="true"
+                        android:layout_below="@id/values"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:textSize="15.0sp"
+                        android:textColor="@color/global_text"
+                        android:id="@+id/dashboard_outstanding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mmedium"
+                        android:singleLine="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/outstanding_totalmoney" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:background="@color/background"
+            android:layout_width="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/overdue_linearlayout"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Orders"
+                    android:id="@+id/just_tv1"
+                    android:textColor="@color/global_text"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/values1"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:weightSum="2"
+                    android:layout_below="@id/just_tv1"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/overdue_counttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/mmedium"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:layout_marginTop="-8dp"
+                            android:textColor="@color/newgreen"
+                            android:textSize="44.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-8dp"
+                            android:gravity="center"
+                            android:text="Todays"
+                            android:textColor="@color/global_text" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="44.0sp"
+                            android:textColor="@color/overdue"
+                            android:id="@+id/outstanding_counttext11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-8dp"
+                            android:fontFamily="@font/mmedium"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentTop="true"
+                            android:text="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total"
+                            android:layout_marginTop="-8dp"
+                            android:textColor="@color/global_text"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@id/values1"
+                    android:background="@color/background"></View>
+
+
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/global_text"
+                    android:id="@+id/overdue_totalmoney"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/mmedium"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_centerInParent="true"
+                    android:text="$0.00"
+                    android:singleLine="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/values1" />
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/overdue"
+                    android:gravity="center_vertical"
+                    android:id="@+id/dashboard_overdue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/mmedium"
+                    android:layout_below="@id/overdue_totalmoney"
+                    android:layout_alignLeft="@id/overdue_totalmoney" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="8.0dip"
+                    android:layout_height="13.0dip"
+                    android:layout_marginRight="14.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>

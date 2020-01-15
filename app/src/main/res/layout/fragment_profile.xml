@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Profile_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/header_staff_admin"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Details"
+                    android:id="@+id/header_Product_recycler_tv"
+                    android:gravity="center"
+                    android:textColor="@color/global_text"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/header_staff_admin"
+        android:id="@+id/scroll_setting"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/background"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/background"
+                android:id="@+id/imageview_linear">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nav_background"
+                    android:id="@+id/imageview"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/imageview_linear"
+                android:id="@+id/new1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/admin_home"
+                    android:id="@+id/admin_home_include"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/details_more"
+                android:layout_below="@id/new1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:orientation="horizontal"
+                    android:id="@+id/businessname_setting">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/background"
+                        android:fontFamily="@font/mmedium"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:padding="20dp"
+                        android:text="Agent Name" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:id="@+id/staff_name"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/background"
+                        android:layout_marginLeft="-20dp"
+                        android:fontFamily="@font/mmedium"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:textDirection="rtl"
+                        android:padding="20dp"
+                        android:text="Business Name" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_lineheight"
+                    style="@style/setting_line_pad" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/address_setting">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:textColor="@color/background"
+                        android:fontFamily="@font/mmedium"
+                        android:clickable="true"
+                        android:padding="20dp"
+                        android:text="Address" />
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:id="@+id/staff_addresss"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:layout_marginLeft="-20dp"
+                        android:textColor="@color/background"
+                        android:fontFamily="@font/mmedium"
+                        android:clickable="true"
+                        android:textDirection="rtl"
+                        android:padding="20dp"
+                        android:text="Address" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_lineheight"
+                    style="@style/setting_line_pad" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_setting">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:fontFamily="@font/mmedium"
+                        android:padding="20dp"
+                        android:text="Email Id"
+                        android:textColor="@color/background" />
+
+                    <TextView
+                        android:id="@+id/staff_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-20dp"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:fontFamily="@font/mmedium"
+                        android:padding="20dp"
+                        android:text="Email Id"
+                        android:textColor="@color/background"
+                        android:textDirection="rtl" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_lineheight"
+                    style="@style/setting_line_pad" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/currency_setting">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:textColor="@color/background"
+                        android:fontFamily="@font/mmedium"
+                        android:padding="20dp"
+                        android:text="Salary" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:id="@+id/staff_salary"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:layout_marginLeft="-20dp"
+                        android:clickable="true"
+                        android:textDirection="rtl"
+                        android:textColor="@color/background"
+                        android:fontFamily="@font/mmedium"
+                        android:padding="20dp"
+                        android:text="Currency" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_lineheight"
+                    style="@style/setting_line_pad" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/phonenumber_setting">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:textColor="@color/background"
+                        android:fontFamily="@font/mmedium"
+                        android:padding="20dp"
+                        android:text="Phone number" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:id="@+id/staff_phone"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:layout_marginLeft="-20dp"
+                        android:textDirection="rtl"
+                        android:textColor="@color/background"
+                        android:fontFamily="@font/mmedium"
+                        android:padding="20dp"
+                        android:text="Phone number" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_lineheight"
+                    style="@style/setting_line_pad" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/company_setting">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:fontFamily="@font/mmedium"
+                        android:textColor="@color/background"
+                        android:padding="20dp"
+                        android:text="Company Email" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:id="@+id/staff_companyemail"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:layout_marginLeft="-20dp"
+                        android:textDirection="rtl"
+                        android:fontFamily="@font/mmedium"
+                        android:textColor="@color/background"
+                        android:padding="20dp"
+                        android:text="Company Website" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_lineheight"
+                    style="@style/setting_line_pad" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taxregister_setting">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:textColor="@color/background"
+                        android:fontFamily="@font/mmedium"
+                        android:clickable="true"
+                        android:padding="20dp"
+                        android:text="Employee ID " />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:id="@+id/Employe_id"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:layout_marginLeft="-20dp"
+                        android:textDirection="rtl"
+                        android:textColor="@color/background"
+                        android:fontFamily="@font/mmedium"
+                        android:clickable="true"
+                        android:padding="20dp"
+                        android:text="Employee ID" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_lineheight"
+                    style="@style/setting_line_pad" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
